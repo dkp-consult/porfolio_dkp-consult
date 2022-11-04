@@ -52,3 +52,41 @@
 .menu-sizing {
     width: 50px;
 }
+
+@font-face {
+    font-family: "Fira";
+    src: url("../../fonts/FiraCode-Regular.ttf") format("truetype");
+  }
+
+.name {
+    font-family: 'Fira';
+    margin-left: auto;
+    margin-right: auto;
+}
+header {
+    background-color: blue;
+    display: flex;
+    width: 100%;
+}
+.pics-card {
+    background: rgba(108, 144, 227, 0.25);
+    border-radius: 50%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    border: 1px solid rgba(108, 144, 227, 0.3);
+    height: 220px;
+    width: 220px;
+    margin-top: 50px;
+    margin-left: 25px;
+}
+.pics {
+    background-image: url(../../images/picsofme.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+}

@@ -90,3 +90,17 @@ header {
     position: relative;
     transform: translate(-50%, -50%);
 }
+.who {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.about-me {
+    width: calc(100% - 300px);
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 25px;
+}

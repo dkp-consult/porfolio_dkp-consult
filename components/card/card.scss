@@ -16,14 +16,14 @@ body {
     border-radius: 15px;
     background-color: $card-dark;
 }
-.card-img {
+.card-img-desktop {
     width: 370px;
     height: 145px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-color: blue;
 }
-.card-logo {
+.card-logo-desktop {
     width: 28px;
     height: 28px;
     background-image: url(../../images/icons/css.svg);
@@ -31,7 +31,7 @@ body {
     top: 19px;
     left: 325px;
 }
-.card-explain p {
+.card-explain-desktop p {
     font-family: 'Fira';
     color: $secondaryColorOne;
     font-size: $body-text;
@@ -39,14 +39,60 @@ body {
     margin-right: 31px;
     margin-top: 25px;
 }
-.card-btn {
+.card-btn-desktop {
     width: 129px;
     height: 38px;
     margin-left: 31px;
     background-color: $btn-dark;
     border-radius: 8px;
 }
-.card-btn a {
+.card-btn-desktop a {
+    text-decoration: none;
+    color: $secondaryColorFour;
+    font-size: $code-snippets;
+    line-height: 18px;
+    top: 10px;
+    left: 14px;
+    position: relative;
+}
+
+.card-mobile {
+    width: 291px;
+    height: 328px;
+    border-radius: 15px;
+    background-color: $card-dark;
+}
+.card-img-mobile {
+    width: 291;
+    height: 146px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: blue;
+}
+.card-logo-mobile {
+    width: 28px;
+    height: 28px;
+    background-image: url(../../images/icons/css.svg);
+    position: relative;
+    top: 19px;
+    left: 245px;
+}
+.card-explain-mobile p {
+    font-family: 'Fira';
+    color: $secondaryColorOne;
+    font-size: $body-text;
+    margin-left: 31px;
+    margin-right: 31px;
+    margin-top: 25px;
+}
+.card-btn-mobile {
+    width: 129px;
+    height: 38px;
+    margin-left: 31px;
+    background-color: $btn-dark;
+    border-radius: 8px;
+}
+.card-btn-mobile a {
     text-decoration: none;
     color: $secondaryColorFour;
     font-size: $code-snippets;

@@ -1,0 +1,23 @@
+@import "../../styles/sass/partials/fonts.scss" ;
+@import "../../styles/sass/partials/colors.scss";
+@import "../../styles/sass/partials/variables.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+}
+
+.header {
+    height: 60px;
+    width: 100vw;
+    border-bottom: 1px solid $linesColor;
+    font-size: $lables-text;
+    color: $secondaryColorFour;
+}
+.hello {
+    border-left: 1px solid $linesColor;
+    border-right: 1px solid $linesColor;
+}

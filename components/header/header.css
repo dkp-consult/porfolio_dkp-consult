@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Fira";
+  src: url("../../fonts/FiraCode-Regular.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: red;
+}
+
+.header {
+  height: 60px;
+  width: 100vw;
+  border-bottom: 1px solid #1E2D3D;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.hello {
+  border-left: 1px solid #1E2D3D;
+  border-right: 1px solid #1E2D3D;
+}/*# sourceMappingURL=header.css.map */

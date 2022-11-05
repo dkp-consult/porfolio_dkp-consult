@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import "../../styles/sass/partials/burger";
+@import "../../styles/sass/partials/colors";
+@import "../../styles/sass/partials/fonts";
+@import "../../styles/sass/partials/variables";
+
+header a {
+    text-decoration: none;
+
+}
+.mobile {
+    background-color: $background-color
+}

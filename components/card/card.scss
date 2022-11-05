@@ -1,0 +1,57 @@
+body {
+    background-color: red;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@import "../../styles/sass/partials/fonts.scss" ;
+@import "../../styles/sass/partials/colors.scss";
+@import "../../styles/sass/partials/variables.scss";
+
+.card-desktop {
+    width: 370px;
+    height: 315px;
+    border-radius: 15px;
+    background-color: $card-dark;
+}
+.card-img {
+    width: 370px;
+    height: 145px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: blue;
+}
+.card-logo {
+    width: 28px;
+    height: 28px;
+    background-image: url(../../images/icons/css.svg);
+    position: relative;
+    top: 19px;
+    left: 325px;
+}
+.card-explain p {
+    font-family: 'Fira';
+    color: $secondaryColorOne;
+    font-size: $body-text;
+    margin-left: 31px;
+    margin-right: 31px;
+    margin-top: 25px;
+}
+.card-btn {
+    width: 129px;
+    height: 38px;
+    margin-left: 31px;
+    background-color: $btn-dark;
+    border-radius: 8px;
+}
+.card-btn a {
+    text-decoration: none;
+    color: $secondaryColorFour;
+    font-size: $code-snippets;
+    line-height: 18px;
+    top: 10px;
+    left: 14px;
+    position: relative;
+}

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Fira";
   src: url("../../fonts/FiraCode-Regular.ttf") format("truetype");
@@ -39,5 +43,4 @@
 
 body {
   background-color: red;
-  box-sizing: border-box;
 }/*# sourceMappingURL=button.css.map */

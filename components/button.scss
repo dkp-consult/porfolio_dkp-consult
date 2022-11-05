@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 
 @import "../styles/sass/partials/fonts.scss" ;
 @import "../styles/sass/partials/colors.scss";
@@ -35,9 +38,6 @@
 .text-white {
     color: $secondaryColorFour;
 }
-
-
 body {
     background-color: red;
-    box-sizing: border-box;
 }

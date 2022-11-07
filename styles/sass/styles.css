@@ -40,7 +40,7 @@ body {
 
 .sidenav {
   width: calc(100vw - 30px);
-  height: calc(100vh - 230px);
+  height: calc(100vh - 30px);
   position: fixed;
   border: solid 1px #1E2D3D;
   border-radius: 8px;
@@ -48,7 +48,7 @@ body {
   top: 0;
   left: -150vw;
   background-color: #011627;
-  margin-top: 100px;
+  margin-top: 15px;
   margin-bottom: 100px;
   transition: left 0.5s ease;
 }
@@ -79,18 +79,19 @@ body {
 
 .sidenav.active {
   left: 0;
-  width: calc(100vw - 100px);
-  height: calc(100vh - 230px);
+  width: calc(100vw - 30px);
+  height: calc(100vh - 30px);
   border: solid 1px #1E2D3D;
   border-radius: 8px;
-  margin-left: 60px;
+  margin-left: 15px;
 }
 
 .sidenav .close {
   position: absolute;
-  top: 0;
-  right: 25px;
+  top: -30px;
+  right: 10px;
   font-size: 36px;
+  border-bottom: none;
 }
 
 .burger-icon span {

@@ -36,7 +36,7 @@ body {
 }
 .sidenav {
     width:  calc(100vw - 30px);
-    height: calc(100vh - 30px);
+    height: calc(100vh - 230px);
     position: fixed;
     border: solid 1px $linesColor;
     border-radius: 8px;
@@ -44,13 +44,16 @@ body {
     top: 0;
     left: -150vw;
     background-color: $primaryColorTwo;
-    margin-top: 60px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     transition: left 0.5s ease;
 }
 .sidenav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 .sidenav a {
     padding: 8px 8px 8px 32px;
@@ -59,6 +62,9 @@ body {
     color: $secondaryColorFour;
     display: block;
     transition: 0.3s;
+    height: 100px;
+    border-bottom: 1px solid $linesColor;
+    line-height: 100px;
 }
 .sidenav a:hover {
     color: #111;
@@ -66,7 +72,7 @@ body {
 .sidenav.active {
     left: 0;
     width:calc(100vw - 100px);
-    height: calc(100vh - 100px);
+    height: calc(100vh - 230px);
     border: solid 1px $linesColor;
     border-radius: 8px;
     margin-left: 60px;
@@ -87,4 +93,22 @@ body {
 .burger {
   padding-right: 18px;
   padding-top: 10px;  
+}
+.name-navbar, .hello, .about-me, .projects, .contact-me {
+    height: 100px;
+    line-height: 100px;
+}
+.name-navbar a, .hello a, .about-me a, .projects a, .contact-me a {
+    padding-left: 60px;
+    height: 100px;
+    line-height: 100px;
+}
+.footer-navbar {
+    border-radius: 8px;
+    border-top: 1px solid $linesColor;
+    height: 100px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
 }

@@ -2,17 +2,84 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Fira, Consolas'
 }
 
-@import "../../styles/sass/partials/burger";
 @import "../../styles/sass/partials/colors";
 @import "../../styles/sass/partials/fonts";
 @import "../../styles/sass/partials/variables";
 
-header a {
-    text-decoration: none;
+header {
+    border-bottom: 1px solid $linesColor;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+}
 
+body {
+    background-color: $background-color;
+} 
+.name a{
+    color: $secondaryColorOne;
+    text-decoration: none;
+    line-height: 56px;
+    padding-left: 18px;
 }
 .mobile {
-    background-color: $background-color
+    width:345px;
+    height: 697px;
+    border: solid 1px $linesColor;
+    border-radius: 8px;
+    background-color: $primaryColorThree;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sidenav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -400px;
+    background-color: $primaryColorTwo;
+    padding-top: 60px;
+    transition: right 0.5s ease;
+}
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: $secondaryColorFour;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #111;
+}
+.sidenav.active {
+    left: 0;
+}
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+.burger-icon span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: $secondaryColorOne;
+    margin: 6px 0;
+}
+.burger {
+  padding-right: 18px;
+  padding-top: 10px;  
 }

@@ -35,6 +35,7 @@ body {
   background-color: #011627;
   position: absolute;
   margin: 15px;
+  overflow: hidden;
 }
 
 .sidenav {
@@ -182,4 +183,54 @@ body {
        hsl(207deg 100% 45%) 71%,
        hsl(162deg 66% 56%) 100%);
    filter:blur(75px); */
+}
+
+.hello-all {
+  color: #FFFFFF;
+  font-size: 18px;
+  position: absolute;
+  top: 162px;
+  left: 27px;
+}
+
+.dkp-consult {
+  color: #FFFFFF;
+  font-size: 62px;
+  position: relative;
+  top: 108px;
+  left: 50px;
+  overflow: hidden;
+}
+
+.underline-letter {
+  border-bottom: solid 4px #E99287;
+}
+
+.babydev {
+  color: #43D9AD;
+  font-size: 20px;
+  position: relative;
+  top: 120px;
+  left: 80px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.find-me {
+  color: #607B96;
+  font-size: 14px;
+  position: relative;
+  top: 400px;
+  left: 35px;
+}
+
+.find-me-code {
+  color: #4D5BCE;
+  position: relative;
+  left: 50px;
+}
+
+.find-me-code a {
+  color: #E99287;
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */

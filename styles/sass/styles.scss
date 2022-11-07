@@ -111,4 +111,38 @@ body {
     display: block;
     position: absolute;
     bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 25px;
+    color: $secondaryColorFour;
+}
+.twitter {
+    border-left: 1px solid $linesColor;
+    border-right: 1px solid $linesColor;
+    height: 100px;
+    width: 100px;
+    background-image: url(../../images/icons/twitter.svg);
+    background-size: cover;
+    opacity: 0.3;
+    padding-left: 30px;
+    background-color: $secondaryColorFour;
+}
+
+.github {
+    height: 100px;
+    width: 100px;
+    background-image: url(../../images/icons/github.svg);
+    opacity: 0.3;
+    background-size: cover;
+    background-color: $secondaryColorFour;
+}
+.right {
+    display: flex;
+    flex-direction: row;
+}
+.left {
+    line-height: 100px;
+    padding-left: 60px;
 }

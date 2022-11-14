@@ -30,12 +30,12 @@ body {
 .mobile {
   width: calc(100vw - 30px);
   height: calc(100vh - 30px);
+  max-height: 200vh;
   border: solid 1px #1E2D3D;
   border-radius: 8px;
   background-color: #011627;
   position: absolute;
   margin: 15px;
-  overflow: hidden;
 }
 
 .sidenav {
@@ -44,7 +44,7 @@ body {
   position: fixed;
   border: solid 1px #1E2D3D;
   border-radius: 8px;
-  z-index: 1;
+  z-index: 10;
   top: 0;
   left: -150vw;
   background-color: #011627;
@@ -74,7 +74,7 @@ body {
 }
 
 .sidenav a:hover {
-  color: #111;
+  color: #607B96;
 }
 
 .sidenav.active {
@@ -121,7 +121,7 @@ body {
 .footer-navbar {
   border-radius: 8px;
   border-top: 1px solid #1E2D3D;
-  height: 100px;
+  height: 75px;
   width: 100%;
   display: block;
   position: absolute;
@@ -137,8 +137,8 @@ body {
 .twitter {
   border-left: 1px solid #1E2D3D;
   border-right: 1px solid #1E2D3D;
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
   background-image: url(../../images/icons/twitter.svg);
   background-size: cover;
   opacity: 0.3;
@@ -147,8 +147,8 @@ body {
 }
 
 .github {
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
   background-image: url(../../images/icons/github.svg);
   opacity: 0.3;
   background-size: cover;
@@ -161,7 +161,53 @@ body {
 }
 
 .left {
-  line-height: 100px;
+  line-height: 75px;
+  padding-left: 60px;
+}
+
+.footer-navbar-about {
+  border-radius: 8px;
+  border-top: 1px solid #1E2D3D;
+  width: calc(100vw - 30px);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
+.twitter-about {
+  border-left: 1px solid #1E2D3D;
+  border-right: 1px solid #1E2D3D;
+  height: 82px;
+  width: 82px;
+  background-image: url(../../images/icons/twitter.svg);
+  background-size: cover;
+  opacity: 0.3;
+  padding-left: 30px;
+  background-color: #FFFFFF;
+}
+
+.github-about {
+  height: 82px;
+  width: 82px;
+  background-image: url(../../images/icons/github.svg);
+  opacity: 0.3;
+  background-size: cover;
+  background-color: #FFFFFF;
+}
+
+.right-about {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-about {
+  line-height: 75px;
   padding-left: 60px;
 }
 
@@ -200,7 +246,8 @@ body {
   position: relative;
   top: 108px;
   left: 50px;
-  overflow: hidden;
+  width: 80vw;
+  padding-bottom: 5px;
 }
 
 .underline-letter {
@@ -214,7 +261,6 @@ body {
   top: 120px;
   left: 80px;
   width: 300px;
-  overflow: hidden;
 }
 
 .find-me {
@@ -223,6 +269,7 @@ body {
   position: relative;
   top: 400px;
   left: 35px;
+  width: 80vw;
 }
 
 .find-me-code {

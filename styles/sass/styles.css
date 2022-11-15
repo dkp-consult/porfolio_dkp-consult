@@ -28,14 +28,13 @@ body {
 }
 
 .mobile {
-  width: calc(100vw - 30px);
-  height: calc(100vh - 30px);
-  max-height: 200vh;
+  width: calc(98vw - 30px);
+  min-height: calc(100% - 30px);
   border: solid 1px #1E2D3D;
   border-radius: 8px;
   background-color: #011627;
   position: absolute;
-  margin: 15px;
+  margin: 2vw;
 }
 
 .sidenav {
@@ -168,9 +167,9 @@ body {
 .footer-navbar-about {
   border-radius: 8px;
   border-top: 1px solid #1E2D3D;
-  width: calc(100vw - 30px);
+  width: calc(98vw - 30px);
   display: block;
-  position: absolute;
+  position: relative;
   bottom: 0;
   display: flex;
   flex-direction: row;
@@ -178,6 +177,7 @@ body {
   text-decoration: none;
   font-size: 25px;
   color: #FFFFFF;
+  margin-top: 64vh;
 }
 
 .twitter-about {
@@ -204,6 +204,7 @@ body {
 .right-about {
   display: flex;
   flex-direction: row;
+  padding-right: 0.5vw;
 }
 
 .left-about {

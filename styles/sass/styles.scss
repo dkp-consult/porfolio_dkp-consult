@@ -25,14 +25,13 @@ body {
     padding-left: 18px;
 }
 .mobile {
-    width:calc(100vw - 30px);
-    height: calc(100vh - 30px);
-    max-height: 200vh;
+    width:calc(98vw - 30px);
+    min-height: calc(100% - 30px);
     border: solid 1px $linesColor;
     border-radius: 8px;
     background-color: $primaryColorThree;
     position: absolute;
-    margin: 15px;
+    margin: 2vw;
 }
 .sidenav {
     width:  calc(100vw - 30px);
@@ -150,9 +149,9 @@ body {
 .footer-navbar-about{
     border-radius: 8px;
     border-top: 1px solid #1E2D3D;
-    width: calc(100vw - 30px);
+    width: calc(98vw - 30px);
     display: block;
-    position: absolute;
+    position: relative;
     bottom: 0;
     display: flex;
     flex-direction: row;
@@ -160,6 +159,7 @@ body {
     text-decoration: none;
     font-size: 25px;
     color: $secondaryColorFour;
+    margin-top: 64vh;
 }
 .twitter-about {
     border-left: 1px solid $linesColor;
@@ -183,6 +183,7 @@ body {
 .right-about{
     display: flex;
     flex-direction: row;
+    padding-right: 0.5vw;
 }
 .left-about{
     line-height: 75px;

@@ -189,7 +189,6 @@ body {
   background-size: cover;
   opacity: 0.3;
   padding-left: 30px;
-  background-color: #FFFFFF;
 }
 
 .github-about {
@@ -198,7 +197,6 @@ body {
   background-image: url(../../images/icons/github.svg);
   opacity: 0.3;
   background-size: cover;
-  background-color: #FFFFFF;
 }
 
 .right-about {

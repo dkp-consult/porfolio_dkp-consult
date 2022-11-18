@@ -2,7 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Fira, Consolas'
+    font-family: Fira, Consolas;
+    touch-action: none;
 }
 
 @import "../../styles/sass/partials/colors";
@@ -25,16 +26,18 @@ body {
     padding-left: 18px;
 }
 .mobile {
-    width:calc(98vw - 30px);
+    width:calc(98vw - 2vw);
     min-height: calc(100% - 30px);
     border: solid 1px $linesColor;
     border-radius: 8px;
     background-color: $primaryColorThree;
     position: absolute;
-    margin: 2vw;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    overflow: hidden;
 }
 .sidenav {
-    width:  calc(100vw - 30px);
+    width:  calc(98vw - 2vw);
     height: calc(100vh - 30px);
     position: fixed;
     border: solid 1px $linesColor;
@@ -70,11 +73,13 @@ body {
 }
 .sidenav.active {
     left: 0;
-    width:calc(100vw - 30px);
+    width:calc(98vw - 2vw);
+    margin-left: 2vw;
+    margin-top: 2vh;
     height: calc(100vh - 30px);
     border: solid 1px $linesColor;
     border-radius: 8px;
-    margin-left: 15px;
+    
 }
 .sidenav .close {
     position: absolute;
@@ -102,6 +107,7 @@ body {
     padding-left: 60px;
     height: 100px;
     line-height: 100px;
+    
 }
 .footer-navbar {
     border-radius: 8px;
@@ -127,7 +133,10 @@ body {
     background-size: cover;
     opacity: 0.3;
     padding-left: 30px;
-    background-color: $secondaryColorFour;
+    transition: opacity 1s ease;
+        &:hover {
+            opacity: 0.9;
+        }
 }
 .github {
     height: 75px;
@@ -135,7 +144,10 @@ body {
     background-image: url(../../images/icons/github.svg);
     opacity: 0.3;
     background-size: cover;
-    background-color: $secondaryColorFour;
+    transition: opacity 1s ease;
+        &:hover {
+            opacity: 0.9;
+        }
 }
 .right {
     display: flex;
@@ -170,7 +182,10 @@ body {
     background-size: cover;
     opacity: 0.3;
     padding-left: 30px;
-    
+    transition: opacity 1s ease;
+    &:hover {
+        opacity: 0.9;
+    }
 }
 .github-about{
     height: 82px;
@@ -178,7 +193,10 @@ body {
     background-image: url(../../images/icons/github.svg);
     opacity: 0.3;
     background-size: cover;
-    
+    transition: opacity 1s ease;
+    &:hover {
+        opacity: 0.9;
+    }
 }
 .right-about{
     display: flex;
@@ -255,4 +273,18 @@ body {
 .find-me-code a {
     color: $accentColorThree;
     text-decoration: none;
+}
+
+.work-in-progress {
+    color: $secondaryColorFour;
+    padding: 15px;
+
+    a {
+        text-decoration: none;
+        color: $secondaryColorOne;
+    }
+
+    a:hover {
+        color: $secondaryColorThree;
+    }
 }

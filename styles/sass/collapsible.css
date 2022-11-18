@@ -22,11 +22,11 @@
   margin-top: 10px;
 }
 
-.active, .collapsible:hover {
+.active-collapsible, .collapsible:hover {
   background-color: #1E2D3D;
 }
 
-.active + .content {
+.active-collabsible + .content {
   padding: 18px;
 }
 

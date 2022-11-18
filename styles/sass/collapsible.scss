@@ -23,11 +23,11 @@
     margin-top: 10px;
   }
   
-  .active, .collapsible:hover {
+  .active-collapsible, .collapsible:hover {
     background-color: $linesColor;
   }
 
-  .active + .content {
+  .active-collabsible + .content {
     padding: 18px;
   }
   .content {

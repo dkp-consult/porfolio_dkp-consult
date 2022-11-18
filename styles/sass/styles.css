@@ -2,7 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Fira, Consolas";
+  font-family: Fira, Consolas;
+  touch-action: none;
 }
 
 @font-face {
@@ -28,17 +29,19 @@ body {
 }
 
 .mobile {
-  width: calc(98vw - 30px);
+  width: 96vw;
   min-height: calc(100% - 30px);
   border: solid 1px #1E2D3D;
   border-radius: 8px;
   background-color: #011627;
   position: absolute;
-  margin: 2vw;
+  margin-left: 2vw;
+  margin-top: 2vh;
+  overflow: hidden;
 }
 
 .sidenav {
-  width: calc(100vw - 30px);
+  width: 96vw;
   height: calc(100vh - 30px);
   position: fixed;
   border: solid 1px #1E2D3D;
@@ -78,11 +81,12 @@ body {
 
 .sidenav.active {
   left: 0;
-  width: calc(100vw - 30px);
+  width: 96vw;
+  margin-left: 2vw;
+  margin-top: 2vh;
   height: calc(100vh - 30px);
   border: solid 1px #1E2D3D;
   border-radius: 8px;
-  margin-left: 15px;
 }
 
 .sidenav .close {
@@ -142,7 +146,10 @@ body {
   background-size: cover;
   opacity: 0.3;
   padding-left: 30px;
-  background-color: #FFFFFF;
+  transition: opacity 1s ease;
+}
+.twitter:hover {
+  opacity: 0.9;
 }
 
 .github {
@@ -151,7 +158,10 @@ body {
   background-image: url(../../images/icons/github.svg);
   opacity: 0.3;
   background-size: cover;
-  background-color: #FFFFFF;
+  transition: opacity 1s ease;
+}
+.github:hover {
+  opacity: 0.9;
 }
 
 .right {
@@ -189,6 +199,10 @@ body {
   background-size: cover;
   opacity: 0.3;
   padding-left: 30px;
+  transition: opacity 1s ease;
+}
+.twitter-about:hover {
+  opacity: 0.9;
 }
 
 .github-about {
@@ -197,6 +211,10 @@ body {
   background-image: url(../../images/icons/github.svg);
   opacity: 0.3;
   background-size: cover;
+  transition: opacity 1s ease;
+}
+.github-about:hover {
+  opacity: 0.9;
 }
 
 .right-about {
@@ -280,4 +298,16 @@ body {
 .find-me-code a {
   color: #E99287;
   text-decoration: none;
+}
+
+.work-in-progress {
+  color: #FFFFFF;
+  padding: 15px;
+}
+.work-in-progress a {
+  text-decoration: none;
+  color: #607B96;
+}
+.work-in-progress a:hover {
+  color: #4D5BCE;
 }/*# sourceMappingURL=styles.css.map */

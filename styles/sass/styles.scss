@@ -1,15 +1,14 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Fira, Consolas;
-    touch-action: none;
-}
-
 @import "../../styles/sass/partials/colors";
 @import "../../styles/sass/partials/fonts";
 @import "../../styles/sass/partials/variables";
 
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: Fira, Consolas;
+touch-action: none;
+}
 header {
     border-bottom: 1px solid $linesColor;
     height: 56px;
@@ -157,7 +156,6 @@ body {
     line-height: 75px;
     padding-left: 60px;
 }
-
 .footer-navbar-about{
     border-radius: 8px;
     border-top: 1px solid #1E2D3D;
@@ -207,7 +205,6 @@ body {
     line-height: 75px;
     padding-left: 60px;
 }
-
 .blurs-background {
     width: 300px;
     height: 418px;
@@ -274,7 +271,6 @@ body {
     color: $accentColorThree;
     text-decoration: none;
 }
-
 .work-in-progress {
     color: $secondaryColorFour;
     padding: 15px;
@@ -286,5 +282,66 @@ body {
 
     a:hover {
         color: $secondaryColorThree;
+    }
+}
+
+.header a {
+    text-decoration: none;
+    color: $secondaryColorFour;
+}
+.header {
+    height: 60px;
+    width: 100vw;
+    border-bottom: 1px solid $linesColor;
+    font-size: $lables-text;
+    display: flex;
+    justify-content: space-between;
+    line-height: 60px;
+}
+.name-header {
+    padding-right: 150px;
+    padding-left: 100px;
+}
+.hello-header {
+    border-left: 1px solid $linesColor;
+    border-right: 1px solid $linesColor;
+    padding: 0 30px;
+}
+.about-me-header {
+    border-right: 1px solid $linesColor;
+    padding: 0 30px;
+}
+.projects-header {
+    border-right: 1px solid $linesColor;
+    padding: 0 30px;
+}
+.contact-me-header {
+    border-left: 1px solid $linesColor;
+    padding: 0 30px;
+}
+.left-header {
+    display: flex;
+    flex-direction: row;
+}
+.space-content-header {
+    width: 100%;
+    height: 200px;
+}
+
+@media screen and (min-width: 900px) {
+    .name {
+        display: none;
+    }
+    header {
+        border-bottom: none;
+    }
+    .burger {
+        display: none;
+    }
+    .mobile {
+        overflow-y: auto;
+    }
+    .find-me {
+        padding-bottom: 10vh;
     }
 }

@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Fira";
+  src: url("../../fonts/FiraCode-Regular.ttf") format("truetype");
+}
 * {
   padding: 0;
   margin: 0;
@@ -6,10 +10,6 @@
   touch-action: none;
 }
 
-@font-face {
-  font-family: "Fira";
-  src: url("../../fonts/FiraCode-Regular.ttf") format("truetype");
-}
 header {
   border-bottom: 1px solid #1E2D3D;
   height: 56px;
@@ -310,4 +310,73 @@ body {
 }
 .work-in-progress a:hover {
   color: #4D5BCE;
+}
+
+.header a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.header {
+  height: 60px;
+  width: 100vw;
+  border-bottom: 1px solid #1E2D3D;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 60px;
+}
+
+.name-header {
+  padding-right: 150px;
+  padding-left: 100px;
+}
+
+.hello-header {
+  border-left: 1px solid #1E2D3D;
+  border-right: 1px solid #1E2D3D;
+  padding: 0 30px;
+}
+
+.about-me-header {
+  border-right: 1px solid #1E2D3D;
+  padding: 0 30px;
+}
+
+.projects-header {
+  border-right: 1px solid #1E2D3D;
+  padding: 0 30px;
+}
+
+.contact-me-header {
+  border-left: 1px solid #1E2D3D;
+  padding: 0 30px;
+}
+
+.left-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.space-content-header {
+  width: 100%;
+  height: 200px;
+}
+
+@media screen and (min-width: 900px) {
+  .name {
+    display: none;
+  }
+  header {
+    border-bottom: none;
+  }
+  .burger {
+    display: none;
+  }
+  .mobile {
+    overflow-y: auto;
+  }
+  .find-me {
+    padding-bottom: 10vh;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -258,9 +258,11 @@ body {
     color: $secondaryColorOne;
     font-size: $code-snippets;
     position: relative;
-    top: 400px;
-    left: 35px;
-    width: 80vw;
+    top: 42vh;
+    left: 18vw;
+    width: 58vw;
+    margin-bottom: 10vh;
+    height: 10vh;
 }
 .find-me-code {
     color: $gradientsColorOne;
@@ -288,6 +290,10 @@ body {
 .header a {
     text-decoration: none;
     color: $secondaryColorFour;
+    transition: color 1s ease;
+    &:hover {
+        color: #FEA55F;
+    }
 }
 .header {
     height: 60px;
@@ -328,6 +334,106 @@ body {
     height: 200px;
 }
 
+
+.footer a {
+    text-decoration: none;
+    color: $secondaryColorFour;
+}
+.footer {
+    width: 96vw;
+    height: 50px;
+    border-top: 1px solid $linesColor;
+    color: $secondaryColorFour;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 13px;
+}
+.find-me-footer {
+    padding-right: 75px;
+    padding-left: 75px;
+}
+.twitter-footer {
+    border-left: 1px solid $linesColor;
+    border-right: 1px solid $linesColor;
+    height: 49px;
+    width: 52px;
+    background-image: url(../../images/icons/twitter.svg);
+    opacity: 0.3;
+    transition: opacity 1s ease;
+    &:hover {
+        opacity: 1;
+    }
+}
+.right {
+    display: flex;
+    flex-direction: row;
+}
+.left-footer {
+    display: flex;
+}
+.github-footer {
+    border-left: 1px solid $linesColor;
+    padding-left: 30px;
+    opacity: 0.3;
+    transition: opacity 1s ease;
+    &:hover {
+        opacity: 1;
+    }
+}
+.github-footer-logo {
+    height: 49px;
+    width: 52px;
+    background-image: url(../../images/icons/github.svg);
+    opacity: 1;
+}
+
+.code-preview {
+    width: 35vw;
+    height: 150px;
+    background-color: aqua;
+    position: absolute;
+    left: 50%;
+    background-image: url(../../images/desktop-v02.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+    opacity: 0.7;
+    top: 40%;
+    border: 1px solid $accentColorTwo;
+    mix-blend-mode: difference;
+}
+.screen-one {
+    width: 35vw;
+    height: 150px;
+    background-color: aqua;
+    position: absolute;
+    top: 115%;
+    background-image: url(../../images/ide-05.png);
+    background-size: cover ;
+    border-radius: 8px;
+    mix-blend-mode: color-dodge;
+    left: 50px;
+    border: 1px solid $gradientsColorOne;
+}
+.screen-two {
+    width: 35vw;
+    height: 150px;
+    background-color: aqua;
+    position: absolute;
+    top: -115%;
+    background-image: url(../../images/dev-01.png);
+    background-size: cover ;
+    border-radius: 8px;
+    mix-blend-mode: color-dodge;
+    left: -50px;
+    border: 1px solid $accentColorThree;
+}
+.code-preview ul {
+    list-style: none;
+}
+
 @media screen and (min-width: 900px) {
     .name {
         display: none;
@@ -343,5 +449,23 @@ body {
     }
     .find-me {
         padding-bottom: 10vh;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        display: none;
+    }
+    .mobile {
+        overflow-y: auto;
+    }
+    .find-me {
+        padding-bottom: 10vh;
+    }
+    .code-preview {
+        display: none;
+    }
+    .find-me-footer {
+        display: none;
     }
 }

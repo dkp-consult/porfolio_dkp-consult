@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #010C15;
+  background-color: skyblue;
 }
 
 .header a {
@@ -63,6 +63,10 @@ body {
   height: 200px;
 }
 
+.space-content {
+  height: 100px;
+}
+
 /* foooter */
 .footer a {
   text-decoration: none;
@@ -84,7 +88,7 @@ body {
   padding-left: 75px;
 }
 
-.twitter {
+.twitter-footer {
   border-left: 1px solid #1E2D3D;
   border-right: 1px solid #1E2D3D;
   height: 49px;

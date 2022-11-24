@@ -8,7 +8,7 @@
     padding: 0;
 }
 body {
-    background-color: $background-color;
+    background-color: skyblue;
 }
 .header a {
     text-decoration: none;
@@ -52,7 +52,19 @@ body {
     width: 100%;
     height: 200px;
 }
+
+// Content space
+
+.space-content {
+
+    
+    height: 100px;
+
+
+}
+
 /* foooter */
+
 
 .footer a {
     text-decoration: none;
@@ -71,7 +83,7 @@ body {
     padding-right: 75px;
     padding-left: 75px;
 }
-.twitter {
+.twitter-footer {
     border-left: 1px solid $linesColor;
     border-right: 1px solid $linesColor;
     height: 49px;

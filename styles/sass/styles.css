@@ -387,6 +387,10 @@ body {
   margin-bottom: 13px;
 }
 
+.w-about {
+  margin-left: 2vw;
+}
+
 .find-me-footer {
   padding-right: 75px;
   padding-left: 75px;
@@ -486,6 +490,9 @@ body {
     border-bottom: none;
   }
   .burger {
+    display: none;
+  }
+  .footer-navbar-about {
     display: none;
   }
   .mobile {
